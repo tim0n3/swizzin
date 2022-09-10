@@ -18,7 +18,7 @@ function _install_mango() {
             exit 1
             ;;
         "amd64")
-            dlurl=$(curl -s https://api.github.com/repos/hkalexling/Mango/releases/latest | grep "browser_download_url" | head -1 | cut -d\" -f 4)
+            dlurl="https://github.com/hkalexling/Mango/releases/latest/download/mango"
             ;;
         *)
             echo_error "Unsupported arch?"
